@@ -11,11 +11,5 @@
         "destination": "/index.html",
         "statusCode": 200
       }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/index.html"
-      }
     ]
   }
