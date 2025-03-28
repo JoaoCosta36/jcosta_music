@@ -1,20 +1,21 @@
 {
-    "builds": [
-      {
-        "src": "frontend/package.json",
-        "use": "@vercel/static",
-        "config": {
-          "distDir": "frontend/dist"
-        }
-      }
-    ],
     "rewrites": [
       {
         "source": "/(.*)",
-        "destination": "/"
+        "destination": "/index.html"
       }
     ],
-    "env": {
-      "NODE_ENV": "production"
-    }
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "/index.html",
+        "statusCode": 200
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ]
   }

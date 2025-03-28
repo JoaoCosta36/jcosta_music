@@ -1,11 +1,21 @@
 {
-    "builds": [
+    "rewrites": [
       {
-        "src": "frontend/package.json",
-        "use": "@vercel/static",
-        "config": {
-          "distDir": "frontend/dist"
-        }
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "/index.html",
+        "statusCode": 200
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
       }
     ]
   }
