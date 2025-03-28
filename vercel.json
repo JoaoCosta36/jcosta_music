@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "frontend/package.json",
+        "use": "@vercel/node",
+        "config": {
+          "distDir": "frontend/dist"
+        }
+      }
+    ],
+    "env": {
+      "NODE_ENV": "production"
+    }
+  }
