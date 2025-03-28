@@ -9,4 +9,5 @@ export default defineConfig({
   server: {
     port: 3000,
   },
+  base: '/nome-do-repositorio/' // Coloca o nome do repositório ou o caminho correto do subdiretório aqui
 })
