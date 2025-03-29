@@ -4,10 +4,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'dist',
+    outDir: 'dist', // Certifique-se de que o diretório de saída está configurado corretamente
   },
-  server: {
-    port: 3000,
-  },
-  base: '/' // Coloca o nome do repositório ou o caminho correto do subdiretório aqui
+  base: '/', // Aqui deve ser '/' se a aplicação estiver na raiz
 })
